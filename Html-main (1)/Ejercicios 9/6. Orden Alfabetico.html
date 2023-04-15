@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Arreglo alfabéticamente</title>
+  </head>
+  <body>
+    <h1>Arreglo original:</h1>
+    <script>
+      var nombres = ['Ana', 'Juan', 'María', 'Pedro', 'Luis', "Paola", "Liliana", " Carlos"];
+      document.write(nombres);
+    </script>
+    
+    <h1>Orden Alfabetico:</h1>
+    <script>
+      var nombres = ['Ana', 'Juan', 'María', 'Pedro', 'Luis', "Paola", "Liliana", " Carlos"];
+      nombres.sort();
+      var lista = document.createElement('ol');
+      document.body.appendChild(lista);
+      nombres.forEach(function(nombre) {
+        var elementoLista = document.createElement('li');
+        elementoLista.textContent = nombre;
+        lista.appendChild(elementoLista);
+      });
+    </script>
+  </body>
+</html>

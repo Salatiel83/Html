@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fecha Actual</title>
+  </head>
+  <body>
+    <p>La fecha actual es: <span id="fecha"></span></p>
+    <script>
+      var fechaActual = new Date();
+      var fechaElemento = document.getElementById("fecha");
+      fechaElemento.innerHTML = fechaActual.toDateString();
+    </script>
+  </body>
+</html>

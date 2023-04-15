@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Arreglo de números pares</title>
+</head>
+<body>
+	<h1>Números pares</h1>
+	<p>Los números pares son:</p>
+	<ul id="pares"></ul>
+	<script>
+		var numeros = [5, 10, 15, 20, 25];
+		var pares = [];
+		for (var i = 0; i < numeros.length; i++) {
+			if (numeros[i] % 2 === 0) {
+				pares.push(numeros[i]);
+			}
+		}
+		for (var j = 0; j < pares.length; j++) {
+			var li = document.createElement("li");
+			li.appendChild(document.createTextNode(pares[j]));
+			document.getElementById("pares").appendChild(li);
+		}
+	</script>
+</body>
+</html>

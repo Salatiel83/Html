@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body>
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre"><br>
+
+		<label for="apellidos">Apellidos:</label>
+		<input type="text" id="apellidos"><br>
+
+		<button type="button" onclick="mostrarNombre()">Mostrar nombre completo</button>
+	</form>
+
+	<script>
+		function mostrarNombre() {
+			var nombre = document.getElementById("nombre").value;
+			var apellidos = document.getElementById("apellidos").value;
+			var nombreCompleto = nombre + " " + apellidos;
+			alert("El nombre completo es: " + nombreCompleto);
+		}
+	</script>
+</body>
+</html>

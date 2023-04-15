@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Datos Persona</title>
+</head>
+<body>
+	<h1>Objeto persona</h1>
+	<p>Haz clic en el botón para mostrar los datos de la persona:</p>
+	<button onclick="mostrarPersona()">Mostrar objeto persona</button>
+	<p id="objetoPersona"></p>
+
+	<script>
+		var persona = {
+			nombre: "Salatiel Doominguez",
+			edad: 26,
+			correo: "Salatiel@dominguez.May"
+		};
+
+		function mostrarPersona() {
+			document.getElementById("objetoPersona").innerHTML = "Nombre: " + persona.nombre + "<br>Edad: " + persona.edad + "<br>Correo electrónico: " + persona.correo;
+		}
+	</script>
+</body>
+</html>

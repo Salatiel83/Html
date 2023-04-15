@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cambiar contenido de un elemento</title>
+  </head>
+  <body>
+    <p id="miParrafo">Este es un párrafo de ejemplo para poder cambiar el contenido de un elemento.</p>
+
+    <button onclick="cambiarContenido()">Cambiar contenido</button>
+
+    <script>
+      function cambiarContenido() {
+        var parrafo = document.getElementById("miParrafo");
+        parrafo.innerHTML = "¡Hola!";
+      }
+    </script>
+  </body>
+</html>

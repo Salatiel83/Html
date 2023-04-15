@@ -1,0 +1,27 @@
+
+<form id="miFormulario">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+  const miFormulario = document.querySelector('#miFormulario');
+
+  miFormulario.addEventListener('submit', function(evento) {
+    evento.preventDefault();
+
+    const nombre = document.querySelector('#nombre');
+    const email = document.querySelector('#email');
+
+    if (!nombre.value || !email.value) {
+      alert('Por favor, completa todos los campos del formulario.');
+    } else {
+      miFormulario.submit();
+    }
+  });
+</script>

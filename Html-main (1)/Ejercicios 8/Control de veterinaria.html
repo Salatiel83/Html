@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mascota</title>
+    <script>
+	
+      var mascota = {
+        nombre: "Toby",
+        edad: 4,
+        tipo: "Perro"
+      };
+      
+      function mostrarMascota() {
+        var elemento = document.getElementById("mascota");
+        elemento.innerHTML = "Nombre: " + mascota.nombre + "<br>Edad: " + mascota.edad + "<br>Tipo: " + mascota.tipo;
+      }
+    </script>
+  </head>
+  <body onload="mostrarMascota()">
+    <h1>Mascota</h1>
+    <div id="mascota"></div>
+  </body>
+</html>
